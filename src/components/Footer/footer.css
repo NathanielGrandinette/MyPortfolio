@@ -1,0 +1,14 @@
+footer {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+  margin-top: 4px;
+}
+
+#footer {
+  background-color: #e9e9e9;
+  min-height: calc(100vh - 95vh);
+  min-width: 100%;
+}

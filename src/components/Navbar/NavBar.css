@@ -1,0 +1,10 @@
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+}
