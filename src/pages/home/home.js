@@ -13,7 +13,7 @@ const Home = () => {
                     <Col className='welcome'>
                         <h3 style={{ margin: '4rem auto' }}>
                             Hi<span style={{ fontSize: '50px' }} className='wave'>&#128075;</span>i'm Nathaniel <span style={{ color: '#3498db' }}>Grandinette</span>. Welcome to my professional portfolio, showcasing my skills
-                            and espertise as a full stack web developer, dedicated to creating visually stunning and functional websites.
+                            and expertise as a full stack web developer, dedicated to creating visually stunning and functional websites.
                         </h3>
                     </Col>
                     <h5 className='home-paragraph' style={{ margin: '6rem auto' }}>
