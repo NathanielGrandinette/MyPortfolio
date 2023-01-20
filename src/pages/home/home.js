@@ -8,7 +8,7 @@ const Home = () => {
                 <Row xs='12'>
 
                     <Col xs='12' md='3' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '1vh 2vh 2vh 1vh' }}>
-                        <img as='Row' id='introPhoto' src='profile-photo.jpg' />
+                        <img as='Row' id='introPhoto' src='profile-photo.jpg' alt=''/>
                     </Col>
                     <Col className='welcome'>
                         <h3 style={{ margin: '4rem auto' }}>

@@ -21,31 +21,31 @@ const About = () => {
                             <h2>Skills</h2>
                             <Carousel xs='12' style={{ marginTop: '25px' }}>
                                 <Carousel.Item interval={2000}>
-                                    <img src='logo512.png' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
+                                    <img src='logo512.png' alt=''  style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
                                     <p>React</p>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <img src='/images/HTML5-logo.png' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
+                                    <img src='/images/HTML5-logo.png' alt=''  style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
                                     <p>HTML 5</p>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <img src='/images/CSS-logo.png' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
+                                    <img src='/images/CSS-logo.png' alt='' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
                                     <p>CSS</p>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <img src='/images/JS-logo.png' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
+                                    <img src='/images/JS-logo.png' alt=''  style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
                                     <p>JavaScript</p>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <img src='/images/express-logo.png' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
+                                    <img src='/images/express-logo.png' alt=''  style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
                                     <p>ExpressJS</p>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <img src='/images/bootstrap-logo.png' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
+                                    <img src='/images/bootstrap-logo.png' alt=''  style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
                                     <p>Bootstrap</p>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <img src='/images/MongoDB_Logo.png' style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
+                                    <img src='/images/MongoDB_Logo.png' alt=''  style={{ width: '150px', height: '150px', borderRadius: '25%' }} />
                                     <p>MongoDB</p>
                                 </Carousel.Item>
                             </Carousel>
