@@ -18,7 +18,7 @@ const NavBar = () => {
                     <Nav className="me-auto">
                     </Nav>
                     <Nav>
-                        <NavDropdown className='profileImage' title={<img src='profile-photo.jpg' alt=''/>} id="collasible-nav-dropdown">
+                        <NavDropdown className='profileImage' title={<img src='profile-photo.jpg' alt='' />} id="collasible-nav-dropdown">
                             <NavDropdown.Item>
                                 <Link to='/resume' className='navLink'>
                                     Resume

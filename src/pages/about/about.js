@@ -1,6 +1,6 @@
 import './about.css'
 import React from 'react'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Carousel, Container, Row, Col } from 'react-bootstrap'
 
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com'
-import { ToastContainer, toast, Slide } from 'react-toastify'
-import { Button, Container } from 'react-bootstrap'
+import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './contact.css'
 
