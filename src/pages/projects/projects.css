@@ -1,6 +1,6 @@
  
   div.polaroid {
-    width: 284px;
+    width: 350px;
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
     background-color: white;
@@ -21,3 +21,6 @@
     transform: rotate(-8deg);
   }
 
+.caption {
+  border-top: 1px solid black;
+}
