@@ -26,7 +26,7 @@ const Projects = () => {
         <div className="timeline">
             <h1 style={{marginTop: 50}}>MY <span className="about-me-header-name">PROJECTS</span></h1>
             {events.map((event, index) => (
-                <div key={event.id} className={`timeline-event ${index % 2 === 0 ? 'left' : 'right'}`}>
+                <div key={event.id} className='timeline-event'>
                     <div className="timeline-event-content">
                         <div className="timeline-event-image">
                             <img src={event.image} alt={event.name} style={{ height: 250, width: 250 }} />
