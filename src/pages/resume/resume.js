@@ -20,7 +20,7 @@ function resume() {
       <div className="sm:min-w-full max-w-xl flex flex-col align-center mx-auto resume-page">
         <Document
           className="mx-auto d-flex flex-wrap"
-          file='./images/nathan-grandinette-resume.pdf'
+          file="./images/nathaniel's-resume.pdf"
           options={options}
         >
           <Page className='resume' size="A4" height={1000} pageIndex={0} />
@@ -30,8 +30,8 @@ function resume() {
       <div className="py-5 border-t-3/2">
         <div className="flex justify-center mt-4">
           <a
-            href='./images/nathan-resume.pdf'
-            download="nathan-grandinette-resume.pdf"
+            href="./images/nathaniel's-resume.pdf"
+            download="nathaniel's-resume.pdf"
             target="_blank"
             rel="noreferrer"
             className={buttonStyling}

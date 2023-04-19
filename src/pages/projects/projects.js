@@ -37,7 +37,7 @@ const Projects = () => {
                             </div>
                             <div>
                                 <h2>{event.name}</h2>
-                                <p style={{ textAlign: 'justify', textJustify: 'inter-word', width: '75%', margin: '0 auto' }}>{event.description}</p>
+                                <p style={{ padding: '50px', textAlign: 'justify', textJustify: 'inter-word', width: '75%', margin: '0 auto' }}>{event.description}</p>
                             </div>
                             <div className="timeline-event-date">{event.date}</div>
 

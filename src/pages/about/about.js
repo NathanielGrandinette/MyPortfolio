@@ -88,7 +88,18 @@ const About = () => {
                                 </Col>
                                 <Col xs='12' md='6' lg='4' className='text' >
                                     <h4>Projects</h4>
-                                    <p className="about-me-text">....in progress</p>
+                                    <p className="about-me-text">
+                                    My experience as a web developer has honed my project management, 
+                                    technical problem-solving, and creative thinking skills. 
+                                    Building and launching websites and applications require careful 
+                                    planning, attention to detail, and the ability to troubleshoot issues 
+                                    in real-time, all of which are strengths I bring to any project. 
+                                    Additionally, I've learned the importance of clear and effective communication 
+                                    with clients and team members, and how to adapt to changing project requirements
+                                    to ensure successful outcomes. With a strong passion for web development, 
+                                    I'm confident in my ability to add value to any team and excel in a fast-paced, 
+                                    dynamic environment that values innovation and dedication.
+                                    </p>
                                 </Col>
                         </Row>
                     </div>

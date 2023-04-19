@@ -121,9 +121,38 @@ body {
   color: #2980b9;
 }
 
-.text {
+@media screen and (min-width: 0) {
+  .text {
   padding: 0 25px 0 25px !important;
+  border-right: none;
 }
+
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    padding: 0 25px 0 25px !important;
+    border-right: 1px solid lightgray;
+  }
+  .text:nth-child(2) {
+    border-right: none;
+  }
+  .text:nth-child(3) {
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  .text {
+    padding: 0 25px 0 25px !important;
+    border-right: 1px solid lightgray;
+  }
+  .text:nth-child(2) {
+    border-right: 1px solid lightgray;
+  }
+}
+
+
 
 #container1 {
   margin: 0 auto;

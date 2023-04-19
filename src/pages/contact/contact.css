@@ -39,13 +39,15 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 65%;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 
 label {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 input[type="text"],

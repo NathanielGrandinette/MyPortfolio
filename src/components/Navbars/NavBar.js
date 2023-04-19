@@ -10,18 +10,16 @@ const NavBar = () => {
     return (
         <Navbar collapseOnSelect className="nav" expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand>
-                    Welcome
-                </Navbar.Brand>
+                <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
+                    Home
+                </Link>
                 <Nav >
                     <Hamburger color="white" onToggle={setToggle} />
                 </Nav>
             </Container>
             {toggle ?
                 <Container className='links'>
-                    <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
-                        Home
-                    </Link>
+
                     <Link to='/resume' className="navLink" >
                         Resume
                     </Link>
