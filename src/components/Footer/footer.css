@@ -3,12 +3,25 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e9e9e9;
+  background-color: black;
   margin-top: 4px;
+  color: white;
+}
+
+.footer-link {
+  border-right: 1px solid white;
+  padding-right: 5px;
+  height: fit-content;
+}
+
+.footer-link:last-child {
+  border-right: none;
 }
 
 #footer {
-  background-color: #e9e9e9;
+  background-color: black;
+  color: white;
   min-height: calc(100vh - 95vh);
+  height: fit-content;
   min-width: 100%;
 }

@@ -51,13 +51,22 @@
     min-height: 28rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #fff;
+    background-color: #2e2a2a;
+    color: white;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0px 0px 10px #3498db;
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s forwards;
+}
+
+.showWelcome {
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
 }
 
 .welcome {
-    background-color: #fff;
+    background-color: #2e2a2a;
+    color: white;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px #3498db;
     margin-top: 25px;
@@ -65,4 +74,16 @@
 
 .text-paragraph {
     margin: 3rem auto;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

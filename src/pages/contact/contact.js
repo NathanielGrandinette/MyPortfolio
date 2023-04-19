@@ -48,16 +48,13 @@ const ContactForm = () => {
                 <h1 className="title">Contact <span className='contact-header-name'>Me</span></h1>
                 <form className="form" onSubmit={sendEmail}>
                     <div className="form-group">
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                        <input type="text" className='form-style' id="name" name="name" placeholder="Your name" required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your email" required />
+                        <input type="email" className='form-style' id="email" name="email" placeholder="Your email" required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="Your message" required />
+                        <textarea id="message" className='form-style' name="message" placeholder="Your message" required />
                     </div>
                     <div className="form-group">
                         <input type="submit" value="Submit" className="submit-btn" />
