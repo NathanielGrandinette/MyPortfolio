@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div style={{ marginTop: '10rem', display: 'flex', flexDirection: 'column', height: '100%' }}>
             <Container style={{ height: 'fit-content', marginBottom: '50px' }}>
-                <Row xs='12'>
+                <Row xs='12' style={{ justifyContent: 'center'}}>
 
                     {showWelcome &&
                         <Row className='showWelcome'>

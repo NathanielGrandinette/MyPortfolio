@@ -4,3 +4,22 @@
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 15px;
 }
+
+.resume-page {
+    margin-top: 100px;
+}
+
+
+
+@media screen and  (min-width: 0) {
+    .resume-page {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width: 1625px) {
+    .resume-page {
+        flex-direction: row;
+    }
+}

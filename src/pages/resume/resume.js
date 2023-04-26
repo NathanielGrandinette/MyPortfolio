@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import './resume.css'
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -10,16 +11,18 @@ const options = {
   cMapPacked: true,
   standardFontDataUrl: "standard_fonts/",
 };
+
 const buttonStyling = `flex space-x-3 mr-2 font-semibold bg-gradient-to-r from-slate via-slate to-slate
   text-green rounded-md ring-2 ring-slate px-10 py-2 
   hover:bg-white hover:text-blue hover:ring-slate mx-10 shadow-lg shadow-slate`;
 
-function resume() {
+const Resume = () => {
+  const [width, setWidth] = useState(window.innerWidth)
   return (
     <>
-      <div className="sm:min-w-full max-w-xl flex flex-col align-center mx-auto resume-page">
+      <div className="sm:min-w-full max-w-xl flex flex-col align-center mx-auto">
         <Document
-          className="mx-auto d-flex flex-wrap"
+          className="mx-auto d-flex flex-wrap resume-page"
           file="./images/nathaniel's-resume.pdf"
           options={options}
         >
@@ -44,4 +47,4 @@ function resume() {
   );
 }
 
-export default resume;
+export default Resume;
