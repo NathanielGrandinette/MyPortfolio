@@ -45,7 +45,7 @@ const Home = () => {
                                     etc, and I have experience using version control systems like Git.
                                 </p>
                                 <p>
-                                    Whether you are looking for a junior developer to join your team, or for someone to take on a small
+                                    Whether you are looking for a developer to join your team, or for someone to take on a small
                                     project, I am here to help bring your ideas to life. I am always looking for new challenges and
                                     opportunities to learn and grow as a developer. I invite you to take a look at my portfolio and see for
                                     yourself the quality of my work and my dedication to producing excellent software solutions.
