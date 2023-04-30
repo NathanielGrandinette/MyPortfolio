@@ -30,7 +30,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div style={{ maxWidth: '', margin: '' }}>
+        <div className="contact-div" style={{ maxWidth: '', margin: '' }}>
             <ToastContainer
                 position="bottom-right"
                 autoClose={5000}

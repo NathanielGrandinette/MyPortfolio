@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import './projects.css';
 
 const Projects = () => {
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
+
     const events = [
         {
             name: "Productivity App",
@@ -30,9 +38,9 @@ const Projects = () => {
     ]
     return (
         <div className="timeline">
-            <h1 style={{ marginTop: 50 }}>MY <span className="about-me-header-name">PROJECTS</span></h1>
+            {window.location.pathname === '/projects' ? <h1 style={{ marginTop: 50, color: 'white' }}>MY <span className="about-me-header-name">PROJECTS</span></h1> : <h1></h1> }
             {events.map((event, index) => (
-                <div key={event.id} className='timeline-event'>
+                <div key={event.id} className='timeline-event' data-aos="zoom-in" data-aos-duration='1000'>
                     <div className='timeline-events'>
                         <div className="timeline-event-content">
                             <div className="timeline-event-image">

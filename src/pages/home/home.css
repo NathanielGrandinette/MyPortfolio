@@ -52,19 +52,10 @@
     animation: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s forwards;
 }
 
-.showWelcome {
-    opacity: 0;
-    animation: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
-}
-
 .welcome {
     color: white;
 }
 
-.text-paragraph p {
-    padding: 20px;
-    margin: 0;
-}
 
 
 @keyframes fade-in {
@@ -76,5 +67,80 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+#introPhoto {
+    width: 200px;
+    height: 300px;
+    border-radius: 25%;
+    margin-right: 10px;
+    float: right;
+}
+
+.text-paragraph-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.text-paragraph-info p {
+    width: 80%;
+}
+
+.text-paragraph-info img {
+    height: 150px;
+    width: 150px;
+}
+
+.home-projects {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.next-steps-span {
+    height: 1px;
+    min-width: 25%;
+    background-color: #3498db;
+}
+
+.next-steps-h2 {
+    color: #3498db;
+    width: 25%;
+}
+
+.seperator-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-projects img {
+    margin: 10px;
+}
+
+.home-container {
+    min-height: 250px;
+    max-width: 75%;
+}
+
+.home-container-button {
+    background-color: transparent !important;
+    color: #3498db !important;
+    margin: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .paragraph-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

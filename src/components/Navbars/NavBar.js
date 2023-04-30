@@ -8,22 +8,22 @@ const NavBar = () => {
     const [toggle, setToggle] = useState()
     const [showLinks, setShowLinks] = useState(false)
     const [width, setWidth] = useState(window.innerWidth)
-    console.log(width)
     window.addEventListener('resize', () => setWidth(window.innerWidth))
     return (
-        <nav className="nav" style={{ height: showLinks ? '100%' : '5%'}}>
+        <nav className="nav" style={{ height: showLinks ? '100%' : '5%' }}>
             {width < 990 ?
-                <Container className='navbar2' style={{ minHeight: showLinks ? '100%' : ''}}>
+                <Container className='navbar2' style={{ minHeight: showLinks ? '100%' : '' }}>
                     <div className='nav-main'>
-                        <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
-                            Home
-                        </Link>
+                        <div></div>
                         <Nav >
                             <Hamburger color="white" onToggle={() => setTimeout(() => setShowLinks(!showLinks))} />
                         </Nav>
                     </div>
                     {showLinks ?
                         <Container className='links-mobile'>
+                            <Link to='/' className='navLink2'>
+                                Home
+                            </Link>
                             <Link to='/resume' className="navLink2" >
                                 Resume
                             </Link>
@@ -40,10 +40,10 @@ const NavBar = () => {
                         : ''}
                 </Container> :
                 <Container className='navbar'>
-                    <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
-                        Home
-                    </Link>
                     <Container className='links'>
+                        <Link to='/' className='navLink'>
+                            Home
+                        </Link>
                         <Link to='/resume' className="navLink" >
                             Resume
                         </Link>
