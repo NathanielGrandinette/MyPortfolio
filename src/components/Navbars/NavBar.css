@@ -6,15 +6,14 @@
     display: flex;
     flex-direction: column;
     width: 100;
-    position: sticky;
-    top: 0;
     z-index: 99999;
 }
 
-.navbar {
-    padding: 10px !important;
+.navbar1 {
     max-width: none !important;
     background-color: rgba(15, 15, 15, 0.3);
+    height: 100%;
+    padding: none !important;
 }
 
 .navbar2 {
@@ -40,15 +39,26 @@
     margin-right: 50px;
     float: right;
 }
+
 .navLink {
+    display: flex;  
+    align-items: center;
     text-decoration: none;
     color: white;
+    height: 100%;
+}
+
+.navLink:hover {
+    color: #3498db;
+    border-bottom: 1px solid #3498db;
 }
 
 .links {
     display: flex;
     justify-content: space-around;
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100%;
     animation: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 

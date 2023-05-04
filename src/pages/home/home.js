@@ -12,28 +12,22 @@ const Home = () => {
         AOS.init()
     }, [])
     return (
-        <div style={{ marginTop: '5rem', display: 'flex', flexDirection: 'column', height: '100%' }}>
-            <Container className='home-container' style={{ height: 'fit-content', marginBottom: '50px' }}>
-                <Row xs='12' style={{ justifyContent: 'center' }} data-aos="fade-in">
-                    <Col xs='12' md='3' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '1vh 2vh 2vh 1vh' }}>
-                        <img id='introPhoto' src="nathan's-photo.png" alt='' />
-                    </Col>
-                    <Col className='welcome'>
-                        <h3 style={{ margin: '4rem auto' }}>
-                            Hi,<span style={{ fontSize: '50px' }} className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>. Welcome to my professional portfolio. I am a Software Developer with a passion for
-                            creating innovative and intuitive technology solutions. With a strong background in some of the
-                            most common programming languages, development frameworks and software design principles, I am
-                            confident in my ability to deliver high-quality, efficient code that meets the needs of my clients.
-                            My eagerness to learn new technologies and the willingness to work with a team makes me a valuable
-                            addition to any development project.
-                        </h3>
-                        <Button className='home-container-button'>
-                            <Link to='/about' style={{ textDecoration: 'none' }}>
-                                Learn More &gt;
-                            </Link>
-                        </Button>
-                    </Col>
-                </Row>
+        <div style={{display: 'flex', flexDirection: 'column', height: '100%' }}>
+            
+            <Container className='home-container'>
+                <h3 style={{ margin: '4rem auto' }}>
+                    Hi,<span style={{ fontSize: '50px' }} className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>. Welcome to my professional portfolio. I am a Software Developer with a passion for
+                    creating innovative and intuitive technology solutions. With a strong background in some of the
+                    most common programming languages, development frameworks and software design principles, I am
+                    confident in my ability to deliver high-quality, efficient code that meets the needs of my clients.
+                    My eagerness to learn new technologies and the willingness to work with a team makes me a valuable
+                    addition to any development project.
+                </h3>
+                <Button className='home-container-button'>
+                    <Link to='/about' style={{ textDecoration: 'none' }}>
+                        Learn More &gt;
+                    </Link>
+                </Button>
             </Container>
             <Container className='home-container'>
                 <div className='seperator-div'>

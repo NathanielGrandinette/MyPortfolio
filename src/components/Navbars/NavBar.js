@@ -10,7 +10,7 @@ const NavBar = () => {
     const [width, setWidth] = useState(window.innerWidth)
     window.addEventListener('resize', () => setWidth(window.innerWidth))
     return (
-        <nav className="nav" style={{ height: showLinks ? '100%' : '5%' }}>
+        <nav className="nav" style={{ height: showLinks ? '100%' : '50px' }}>
             {width < 990 ?
                 <Container className='navbar2' style={{ minHeight: showLinks ? '100%' : '' }}>
                     <div className='nav-main'>
@@ -39,7 +39,7 @@ const NavBar = () => {
                         </Container>
                         : ''}
                 </Container> :
-                <Container className='navbar'>
+                <div className='navbar1'>
                     <Container className='links'>
                         <Link to='/' className='navLink'>
                             Home
@@ -57,7 +57,7 @@ const NavBar = () => {
                             Contact Me
                         </Link>
                     </Container>
-                </Container>}
+                </div>}
 
         </nav>
     )

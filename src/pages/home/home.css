@@ -72,8 +72,8 @@
 
 
 #introPhoto {
-    width: 200px;
-    height: 300px;
+    max-width: 200px;
+    max-height: 300px;
     border-radius: 25%;
     margin-right: 10px;
     float: right;
@@ -92,8 +92,8 @@
 }
 
 .text-paragraph-info img {
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
 }
 
 .home-projects {
@@ -102,6 +102,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
+}
+
+.test {
+    width: 100%;
 }
 
 .next-steps-span {
@@ -129,12 +133,17 @@
 .home-container {
     min-height: 250px;
     max-width: 75%;
+    color: white;
 }
 
 .home-container-button {
     background-color: transparent !important;
     color: #3498db !important;
     margin: 25px;
+}
+
+@media screen and (min-width: 0) {
+    
 }
 
 @media screen and (min-width: 768px) {
