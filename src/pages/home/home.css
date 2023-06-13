@@ -52,6 +52,12 @@
     animation: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s forwards;
 }
 
+.home-headshot {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
 .welcome {
     color: white;
 }
@@ -132,9 +138,13 @@
 
 .home-container {
     min-height: 250px;
-    max-width: 75%;
+    max-width: 100%;
     color: white;
     margin-top: 50px;
+}
+
+.home-container h3 {
+    width: 50%;
 }
 
 .home-container-button {

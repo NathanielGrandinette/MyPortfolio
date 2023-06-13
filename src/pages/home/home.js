@@ -15,11 +15,13 @@ const Home = () => {
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
 
             <Container className='home-container'>
-                <img style={{height: '250px', width: "150px"}} src="nathan's-photo.png" />
-                <span> Hi,<span style={{ fontSize: '50px' }} className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>.</span>
-                <h3 style={{ margin: '4rem auto' }}>
-                    Welcome to my professional portfolio. I am a Software Developer with a passion for creating innovative and intuitive technology solutions.
-                </h3>
+                <div className="home-headshot">
+                    <img style={{ height: '250px', width: "150px" }} src="nathan's-photo.png" />
+                    <div style={{width: '250px'}}>
+                        Hi,<span style={{ fontSize: '40px' }} className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>. <br />
+                        Welcome to my professional portfolio. I am a Software Developer with a passion for creating innovative and intuitive technology solutions.
+                    </div>
+                </div>
             </Container>
             <Container className='home-container'>
                 <div className='seperator-div'>
