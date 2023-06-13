@@ -42,6 +42,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 75%;
 }
 
 @media screen and (min-width: 0px) {
@@ -98,11 +99,11 @@
   justify-content: space-around;
 }
 
-.timeline-event:nth-child(3) .timeline-events .timeline-event-content {
+.timeline-event:nth-child(odd) .timeline-events .timeline-event-content {
   flex-direction: row-reverse;
 }
 
-.timeline-event:nth-child(3) .timeline-events .timeline-event-content .project-details {
+.timeline-event:nth-child(odd) .timeline-events .timeline-event-content .project-details {
   align-items: flex-start;
 }
 
