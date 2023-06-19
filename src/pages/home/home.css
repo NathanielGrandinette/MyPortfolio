@@ -54,7 +54,7 @@
 
 .home-headshot {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
 }
 
