@@ -22,8 +22,6 @@
     padding: 10px !important;
     max-width: none !important;
     background-color: rgba(15, 15, 15, 0.3);
-    backdrop-filter: blur(1px);
-    filter: blur(0);
     z-index: 9999;
 }
 
@@ -65,8 +63,13 @@
 .links-mobile {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.3);
+    -webkit-animation: dropdown forwards 1s;
+    -moz-animation: dropdown forwards 1s;
+    -o-animation: dropdown forwards 1s;
+
 }
 
 .navLink2 {
@@ -84,5 +87,17 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes dropdown {
+    from {
+        height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        height: 100vh;
+        opacity: 1;
     }
 }
