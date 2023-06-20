@@ -56,12 +56,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 450px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.home-headshot h2 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.home-headshot h4 {
+    font-size: 1.5rem;
 }
 
 .home-headshot img {
     width: 50%;
-    max-height: 450px;
+    max-width: 650px;
+    min-width: 375px;
 }
 
 .home-headshot div {
@@ -70,6 +81,8 @@
     align-items: center;
     flex-direction: column;
     width: 50%;
+    min-width: 200px;
+    font-weight: bolder;
 }
 
 .welcome {
@@ -181,6 +194,31 @@
 .home-buttons:hover {
     background-color: #686bf1;
     color: white;
+}
+
+.about-me-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.about-me-social-link {
+    margin: 0 1rem;
+    color: #9ca3af;
+    border-radius: 10px;
+    background-color: #1e3851;
+    padding: 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.about-me-social-link:hover {
+    color: #2980b9;
+}
+
+.follow-me {
+    margin: 0 auto;
+    width: 75%;
 }
 
 @media screen and (max-width: 620px) {

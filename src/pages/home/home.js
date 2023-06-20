@@ -2,6 +2,7 @@ import { Row, Container, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Projects from '../projects/projects';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './home.css'
@@ -44,30 +45,23 @@ const Home = () => {
                 </Link>
             </Container>
 
-            <Container
-                style={{ color: 'white', marginTop: '50px' }}
+            <div
+                style={{ color: 'white', marginTop: '50px', height: '150' }}
+                className="follow-me"
                 data-aos="zoom-in"
                 data-aos-duration='1000'>
-                <div className='text-paragraph-info'>
                     <div className='seperator-div'>
-                        <span className='next-steps-span'></span><h2 className='next-steps-h2'>Next Steps</h2><span className='next-steps-span'></span>
+                        <span className='next-steps-span'></span><h2 className='next-steps-h2'>Follow Me</h2><span className='next-steps-span'></span>
                     </div>
-                    <h5 style={{ marginTop: '50px' }}>
-                        Whether you are looking for a developer to join your team, or for someone to take on a small
-                        project, I am here to help bring your ideas to life. With a strong background in some of the
-                        most common programming languages, development frameworks and software design principles, I am
-                        confident in my ability to deliver high-quality, efficient code that meets the needs of my clients.
-                        My eagerness to learn new technologies and the willingness to work with a team makes me a valuable
-                        addition to any development project.
-                    </h5>
-                    <Link to='/contact' className='home-buttons'>
-                        Contact Me
-                    </Link>
-                    <Link to='/about' className='home-buttons'>
-                        Learn More
-                    </Link>
-                </div>
-            </Container>
+                    <div className="about-me-social-links">
+                        <a href="https://github.com/NathanielGrandinette" className="about-me-social-link" target="_blank">
+                            <i className="fab fa-github"><FaGithub size={30} /></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nathaniel-grandinette" className="about-me-social-link" target="_blank">
+                            <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>
+                        </a>
+                    </div>
+            </div>
         </div>
     )
 }
