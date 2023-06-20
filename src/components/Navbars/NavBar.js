@@ -1,11 +1,10 @@
-import { Navbar, Container, Nav, NavDropdown, Popover } from 'react-bootstrap'
+import { Container, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Spin as Hamburger } from 'hamburger-react'
 import './NavBar.css'
 
 const NavBar = () => {
-    const [toggle, setToggle] = useState()
     const [showLinks, setShowLinks] = useState(false)
     const [width, setWidth] = useState(window.innerWidth)
     window.addEventListener('resize', () => setWidth(window.innerWidth))
@@ -14,18 +13,14 @@ const NavBar = () => {
             {width < 990 ?
                 <div className='navbar2' style={{ height: showLinks ? '100%' : '' }}>
                     <div className='nav-main'>
-                        <div></div>
-                        <Nav >
+                        <div >
                             <Hamburger color="white" onToggle={() => setTimeout(() => setShowLinks(!showLinks))} />
-                        </Nav>
+                        </div>
                     </div>
                     {showLinks ?
                         <div className='links-mobile'>
                             <Link to='/' className='navLink2'>
                                 Home
-                            </Link>
-                            <Link to='/resume' className="navLink2" >
-                                Resume
                             </Link>
                             <Link to='/projects' className='navLink2'>
                                 Projects
@@ -43,9 +38,6 @@ const NavBar = () => {
                     <Container className='links'>
                         <Link to='/' className='navLink'>
                             Home
-                        </Link>
-                        <Link to='/resume' className="navLink" >
-                            Resume
                         </Link>
                         <Link to='/projects' className='navLink'>
                             Projects

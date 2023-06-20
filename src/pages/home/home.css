@@ -54,8 +54,22 @@
 
 .home-headshot {
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    max-height: 450px;
+}
+
+.home-headshot img {
+    width: 50%;
+    max-height: 450px;
+}
+
+.home-headshot div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
 }
 
 .welcome {
@@ -137,7 +151,7 @@
 }
 
 .home-container {
-    min-height: 250px;
+    min-width: 600px;
     max-width: 100%;
     color: white;
     margin-top: 50px;
@@ -153,8 +167,26 @@
     margin: 25px;
 }
 
-@media screen and (min-width: 0) {
-    
+.home-buttons {
+    border: 1px solid #686bf1;
+    padding: 15px;
+    margin: 10px;
+    background-color: #eef2ff;
+    color: gray;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 grey;
+}
+
+.home-buttons:hover {
+    background-color: #686bf1;
+    color: white;
+}
+
+@media screen and (max-width: 620px) {
+    .home-headshot {
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (min-width: 768px) {

@@ -44,20 +44,33 @@ const ContactForm = () => {
                 theme="dark"
             />
 
+            <div className="contact-details">
+                <h2>Contact Details</h2>
+                <div>Mesa, AZ</div>
+                <div>nathaniel.grandinette@gmail.com</div>
+                <div>(480) 270-0854</div>
+            </div>
             <div className="contact-container">
                 <h1 className="title">Contact <span className='contact-header-name'>Me</span></h1>
                 <form className="form" onSubmit={sendEmail}>
                     <div className="form-group">
+                        <label>Full Name</label>
                         <input type="text" className='form-style' id="name" name="name" placeholder="Your name" required />
                     </div>
                     <div className="form-group">
+                        <label>Email</label>
                         <input type="email" className='form-style' id="email" name="email" placeholder="Your email" required />
                     </div>
                     <div className="form-group">
-                        <textarea id="message" className='form-style' name="message" placeholder="Your message" required />
+                        <label>Subject</label>
+                        <input id="message" className='form-style' placeholder="Subject" name="message" required />
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="Submit" className="submit-btn" />
+                        <label>Your Message</label>
+                        <textarea id="message" className='form-style' name="message" required />
+                    </div>
+                    <div className="form-group-btn">
+                        <input type="submit" value="Send Message" className="submit-btn" />
                     </div>
                 </form>
             </div>

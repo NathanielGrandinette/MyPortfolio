@@ -14,25 +14,34 @@ const Home = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
 
-            <Container className='home-container'>
+            <div className='home-container'>
                 <div className="home-headshot">
-                    <img style={{ height: '250px', width: "150px" }} src="nathan's-photo.png" />
-                    <div style={{width: '250px'}}>
-                        Hi,<span style={{ fontSize: '40px' }} className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>. <br />
-                        Welcome to my professional portfolio. I am a Software Developer with a passion for creating innovative and intuitive technology solutions.
+                    <div>
+                        <h2>
+                            Hi,<span className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>. <br />
+                        </h2>
+                        <h4>A Full-Stack Developer</h4>
+                        <a
+                            href="./images/nathaniel's-resume.pdf"
+                            download="nathaniel's-resume.pdf"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="home-buttons"
+                        >
+                            <span className="sr-only">Download Resume</span>
+                        </a>
                     </div>
+                    <img src="developer-dark.svg" />
                 </div>
-            </Container>
+            </div>
             <Container className='home-container'>
                 <div className='seperator-div'>
                     <span className='next-steps-span'></span><h2 className='next-steps-h2'>Projects</h2><span className='next-steps-span'></span>
                 </div>
                 <Projects />
-                <Button className='home-container-button'>
-                    <Link to='/projects' style={{ textDecoration: 'none' }}>
-                        Projects &gt;
-                    </Link>
-                </Button>
+                <Link to='/projects' className='home-buttons'>
+                    More Projects
+                </Link>
             </Container>
 
             <Container
@@ -51,16 +60,12 @@ const Home = () => {
                         My eagerness to learn new technologies and the willingness to work with a team makes me a valuable
                         addition to any development project.
                     </h5>
-                    <Button className='home-container-button'>
-                        <Link to='/contact' style={{ textDecoration: 'none' }}>
-                            Contact Me
-                        </Link>
-                    </Button>
-                    <Button className='home-container-button'>
-                        <Link to='/about' style={{ textDecoration: 'none' }}>
-                            Learn More &gt;
-                        </Link>
-                    </Button>
+                    <Link to='/contact' className='home-buttons'>
+                        Contact Me
+                    </Link>
+                    <Link to='/about' className='home-buttons'>
+                        Learn More
+                    </Link>
                 </div>
             </Container>
         </div>
