@@ -78,7 +78,7 @@
 .home-headshot div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 50%;
     min-width: 200px;
@@ -88,21 +88,6 @@
 .welcome {
     color: white;
 }
-
-
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 
 #introPhoto {
     max-width: 200px;
@@ -196,6 +181,22 @@
     color: white;
 }
 
+.home-button-resume {
+    border: 1px solid #686bf1;
+    padding: 15px;
+    margin: 10px 10px 10px 0;
+    background-color: #eef2ff;
+    color: gray;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 grey;
+}
+
+.home-button-resume:hover {
+    background-color: #686bf1;
+    color: white;
+}
+
 .about-me-social-links {
     display: flex;
     justify-content: center;
@@ -221,16 +222,51 @@
     width: 75%;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 775px) {
     .home-headshot {
         flex-direction: column-reverse;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .paragraph-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.home-intro {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing forwards 1.5s;
+    animation-timing-function: steps(17, end);
+    text-align: left;
+}
+
+.home-intro-sentence {
+    min-width: 360px !important;
+    max-width: 500px;
+}
+
+.download-resume {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+
+
+.home-intro-job {
+    animation: fade-in forwards 3s;
+    text-align: left;
+}
+
+@keyframes typing {
+    from { width: 0 } 
+    to { width: 100% }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

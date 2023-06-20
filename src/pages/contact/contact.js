@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify'
+import { TiLocationOutline } from 'react-icons/ti'
+import { MdOutlineEmail } from 'react-icons/md'
+import { FiPhone } from 'react-icons/fi'
 import 'react-toastify/dist/ReactToastify.css'
 import './contact.css'
 
@@ -46,9 +49,19 @@ const ContactForm = () => {
 
             <div className="contact-details">
                 <h2>Contact Details</h2>
-                <div>Mesa, AZ</div>
-                <div>nathaniel.grandinette@gmail.com</div>
-                <div>(480) 270-0854</div>
+                <div className="contact-details-div">
+                    <TiLocationOutline />
+                    <span className="contact-span">Mesa, AZ</span>
+                </div>
+
+                <div className="contact-details-div">
+                    <MdOutlineEmail />
+                    <span className="contact-span">nathaniel.grandinette@gmail.com</span>
+                </div>
+                <div className="contact-details-div">
+                    <FiPhone />
+                    <span className="contact-span">(480) 270-0854</span>
+                </div>
             </div>
             <div className="contact-container">
                 <h1 className="title">Contact <span className='contact-header-name'>Me</span></h1>

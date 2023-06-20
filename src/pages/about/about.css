@@ -57,7 +57,7 @@ body {
 .skills-container img {
   width: 75px;
   height: 75px;
-  filter: grayscale(90%);
+  filter: grayscale(100%);
 }
 
 .follow {

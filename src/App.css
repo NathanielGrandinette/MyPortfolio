@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
 body {
   background-color: #E9e9e9;
   min-height: 100vh;
   min-width: fit-content;
-  font-family: GeneralSans-Variable;
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
 #root {
