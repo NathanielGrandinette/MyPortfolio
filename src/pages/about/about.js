@@ -35,7 +35,7 @@ const About = () => {
                     <h2 style={{ color: "white" }}>Some of the technologies I have experience with</h2>
                     <div className='skills'>
                         <div>
-                            <img src='logo512.png' alt='' />
+                            <img src='/images/React-icon.svg.png' alt='' />
                         </div>
                         <div>
                             <img src='/images/HTML5-logo.png' alt='' />
