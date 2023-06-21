@@ -46,7 +46,7 @@ const Projects = () => {
     ]
     return (
         <div className="timeline">
-            {window.location.pathname === '/projects' ? <h1 style={{ marginTop: 50, color: 'white' }}>MY <span className="about-me-header-name">PROJECTS</span></h1> : <h1></h1> }
+            {window.location.pathname === '/projects' ? <h1 style={{ marginTop: 50 }}>MY <span className="about-me-header-name">PROJECTS</span></h1> : <h1></h1> }
             {events.map((event, index) => (
                 <div key={event.id} className='timeline-event' data-aos="zoom-in" data-aos-duration='1000'>
                     <div className='timeline-events'>

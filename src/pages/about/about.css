@@ -22,7 +22,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2.5rem;
-  color: white;
 }
 
 .about-me-header-name {
@@ -41,7 +40,6 @@ body {
 .about-me-text-container {
   min-width: 300px;
   width: 60%;
-  color: white;
 }
 
 .skills-container {
@@ -57,7 +55,6 @@ body {
 .skills-container img {
   width: 75px;
   height: 75px;
-  filter: grayscale(100%);
 }
 
 .follow {
@@ -74,11 +71,10 @@ body {
 
 .about-me-social-link {
   margin: 0 1rem;
-  color: #9ca3af;
   border-radius: 10px;
-  background-color: #1e3851;
   padding: 15px;
   transition: color 0.2s ease-in-out;
+  box-shadow: 0 3px 3px 0 black;
 }
 
 .about-me-social-link:hover {
@@ -100,7 +96,6 @@ body {
   align-items: center;
   width: 250px;
   height: 125px;
-  background-color: white;
   border-radius: 10px;
   margin: 25px;
 }

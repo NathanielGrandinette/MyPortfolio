@@ -7,7 +7,7 @@ import { FiPhone } from 'react-icons/fi'
 import 'react-toastify/dist/ReactToastify.css'
 import './contact.css'
 
-const ContactForm = () => {
+const ContactForm = ({ tone }) => {
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -63,24 +63,55 @@ const ContactForm = () => {
                     <span className="contact-span">(480) 270-0854</span>
                 </div>
             </div>
-            <div className="contact-container">
+            <div
+                className="contact-container"
+                style={{ backgroundColor: tone === 'light' ? 'white' : '#102D44' }}
+            >
                 <h1 className="title">Contact <span className='contact-header-name'>Me</span></h1>
                 <form className="form" onSubmit={sendEmail}>
                     <div className="form-group">
                         <label>Full Name</label>
-                        <input type="text" className='form-style' id="name" name="name" placeholder="Your name" required />
+                        <input
+                            type="text"
+                            className='form-style'
+                            id="name" name="name"
+                            placeholder="Your name"
+                            required
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        />
                     </div>
                     <div className="form-group">
                         <label>Email</label>
-                        <input type="email" className='form-style' id="email" name="email" placeholder="Your email" required />
+                        <input
+                            type="email"
+                            className='form-style'
+                            id="email"
+                            name="email"
+                            placeholder="Your email"
+                            required
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        />
                     </div>
                     <div className="form-group">
                         <label>Subject</label>
-                        <input id="message" className='form-style' placeholder="Subject" name="message" required />
+                        <input
+                            id="message"
+                            className='form-style'
+                            placeholder="Subject"
+                            name="message"
+                            required
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        />
                     </div>
                     <div className="form-group">
                         <label>Your Message</label>
-                        <textarea id="message" className='form-style' name="message" required />
+                        <textarea
+                            id="message"
+                            className='form-style'
+                            name="message"
+                            required
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        />
                     </div>
                     <div className="form-group-btn">
                         <input type="submit" value="Send Message" className="submit-btn" />

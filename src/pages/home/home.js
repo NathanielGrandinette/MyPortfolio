@@ -8,7 +8,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './home.css'
 
-const Home = () => {
+const Home = ({ tone }) => {
 
     useEffect(() => {
         AOS.init()
@@ -59,11 +59,21 @@ const Home = () => {
                 <div className='seperator-div'>
                     <span className='next-steps-span'></span><h2 className='next-steps-h2'>Follow Me</h2><span className='next-steps-span'></span>
                 </div>
-                <div className="about-me-social-links">
-                    <a href="https://github.com/NathanielGrandinette" className="about-me-social-link" target="_blank">
+                <div 
+                    className="home-social-links"
+                    >
+                    <a href="https://github.com/NathanielGrandinette" 
+                        className="home-social-link" 
+                        target="_blank"
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? "#9CA3AF" : 'black'}}
+                        >
                         <i className="fab fa-github"><FaGithub size={30} /></i>
                     </a>
-                    <a href="https://linkedin.com/in/nathaniel-grandinette" className="about-me-social-link" target="_blank">
+                    <a href="https://linkedin.com/in/nathaniel-grandinette" 
+                        className="home-social-link" 
+                        target="_blank"
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : ""}}
+                        >
                         <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>
                     </a>
                 </div>

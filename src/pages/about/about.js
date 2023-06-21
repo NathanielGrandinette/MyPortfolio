@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Carousel, Container, Row, Col } from 'react-bootstrap'
 
 
-const About = () => {
+const About = ({ tone }) => {
     return (
         <div className="about-me-section">
             <div className="about-me-container">
@@ -32,35 +32,61 @@ const About = () => {
                     </div>
                 </div>
                 <div className='skills-container'>
-                    <h2 style={{ color: "white" }}>Some of the technologies I have experience with</h2>
+                    <h2>Some of the technologies I have experience with</h2>
                     <div className='skills'>
-                        <div>
-                            <img src='/images/React-icon.svg.png' alt='' />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
+                            <img 
+                            src='/images/React-icon.svg.png' 
+                            alt='react' 
+                            />
                         </div>
-                        <div>
-                            <img src='/images/HTML5-logo.png' alt='' />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
+                            <img 
+                            src='/images/HTML5-logo.png' 
+                            alt='html' 
+                            />
                         </div>
-                        <div>
-                            <img src='/images/CSS-logo.png' alt='' />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
+                            <img 
+                            src='/images/CSS-logo.png' 
+                            alt='css' 
+                            />
                         </div>
-                        <div>
-                            <img src='/images/JS-logo.png' alt='' />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
+                            <img 
+                            src='/images/JS-logo.png' 
+                            alt='javascript' 
+                            />
                         </div>
-                        <div>
-                            <img src='/images/express-logo.png' alt='' />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
+                            <img 
+                                src='/images/express-logo.png' 
+                                alt='express' 
+                                />
                         </div>
-                        <div>
-                            <img src='/images/MongoDB_Logo.png' alt='' />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
+                            <img 
+                                src='/images/MongoDB_Logo.png' 
+                                alt='mongodb' 
+                                />
                         </div>
                     </div>
                 </div>
                 <div className="follow">
-                    <h3 style={{color: 'white'}}>Follow Me</h3>
+                    <h3>Follow Me</h3>
                     <div className="about-me-socials">
-                        <a href="https://github.com/NathanielGrandinette" className="about-me-social-link" target="_blank">
+                        <a href="https://github.com/NathanielGrandinette" 
+                            className="about-me-social-link" 
+                            target="_blank"
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : ""}}
+                            >
                             <i className="fab fa-github"><FaGithub size={30} /></i>
                         </a>
-                        <a href="https://linkedin.com/in/nathaniel-grandinette" className="about-me-social-link" target="_blank">
+                        <a href="https://linkedin.com/in/nathaniel-grandinette" 
+                            className="about-me-social-link" 
+                            target="_blank"
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : ""}}
+                            >
                             <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>
                         </a>
                     </div>
