@@ -1,6 +1,6 @@
-import { Row, Container, Col, Button } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Projects from '../projects/projects';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { BsArrowDownCircle } from 'react-icons/bs'
@@ -15,7 +15,6 @@ const Home = ({ tone }) => {
     }, [])
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-
             <div className='home-container'>
                 <div className="home-headshot">
                     <div className='home-intro-sentence'>
@@ -23,13 +22,14 @@ const Home = ({ tone }) => {
                             Hi,<span className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>. <br />
                         </h2>
                         <div className='home-intro-job'>
-                            <h4>A Full-Stack Developer</h4>
+                            <h3>A Full-Stack Developer</h3>
                             <a
                                 href="./images/nathaniel's-resume.pdf"
                                 download="nathaniel's-resume.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="home-button-resume"
+                                aria-label='Download Resume'
                             >
                                 <div className='download-resume'>
                                     <BsArrowDownCircle /><span className="sr-only">Download Resume</span>
@@ -38,7 +38,7 @@ const Home = ({ tone }) => {
                         </div>
 
                     </div>
-                    <img src="developer-dark.svg" />
+                    <img src="/images/developer-dark.svg" alt='developer' />
                 </div>
             </div>
             <Container className='home-container'>
@@ -59,21 +59,23 @@ const Home = ({ tone }) => {
                 <div className='seperator-div'>
                     <span className='next-steps-span'></span><h2 className='next-steps-h2'>Follow Me</h2><span className='next-steps-span'></span>
                 </div>
-                <div 
+                <div
                     className="home-social-links"
-                    >
-                    <a href="https://github.com/NathanielGrandinette" 
-                        className="home-social-link" 
+                >
+                    <a href="https://github.com/NathanielGrandinette"
+                        className="homepage-social-link"
                         target="_blank"
-                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? "#9CA3AF" : 'black'}}
-                        >
+                        aria-label='GitHub'
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? "#9CA3AF" : 'black' }}
+                    >
                         <i className="fab fa-github"><FaGithub size={30} /></i>
                     </a>
-                    <a href="https://linkedin.com/in/nathaniel-grandinette" 
-                        className="home-social-link" 
+                    <a href="https://linkedin.com/in/nathaniel-grandinette"
+                        className="homepage-social-link"
                         target="_blank"
-                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : ""}}
-                        >
+                        aria-label='LinkedIn'
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
+                    >
                         <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>
                     </a>
                 </div>

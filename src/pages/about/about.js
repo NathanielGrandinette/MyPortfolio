@@ -1,7 +1,6 @@
 import './about.css'
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { Carousel, Container, Row, Col } from 'react-bootstrap'
 
 
 const About = ({ tone }) => {
@@ -11,7 +10,7 @@ const About = ({ tone }) => {
                 <h1 className="about-me-header">ABOUT <span className="about-me-header-name">ME</span></h1>
                 <div className="about-me-content">
                     <div className="about-me-img-container">
-                        <img src='profile-photo.jpg' alt="profile picture" className="about-me-img" />
+                        <img src='/images/profile-photo.jpg' alt="profile picture" className="about-me-img" />
                     </div>
                     <div className="about-me-text-container">
                         <p className="about-me-text">
@@ -34,59 +33,59 @@ const About = ({ tone }) => {
                 <div className='skills-container'>
                     <h2>Some of the technologies I have experience with</h2>
                     <div className='skills'>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
-                            <img 
-                            src='/images/React-icon.svg.png' 
-                            alt='react' 
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                            <img
+                                src='/images/React-icon.svg.png'
+                                alt='react'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
-                            <img 
-                            src='/images/HTML5-logo.png' 
-                            alt='html' 
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                            <img
+                                src='/images/HTML5-logo.png'
+                                alt='html'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
-                            <img 
-                            src='/images/CSS-logo.png' 
-                            alt='css' 
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                            <img
+                                src='/images/CSS-logo.png'
+                                alt='css'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
-                            <img 
-                            src='/images/JS-logo.png' 
-                            alt='javascript' 
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                            <img
+                                src='/images/JS-logo.png'
+                                alt='javascript'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
-                            <img 
-                                src='/images/express-logo.png' 
-                                alt='express' 
-                                />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                            <img
+                                src='/images/express-logo.png'
+                                alt='express'
+                            />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : ""}}>
-                            <img 
-                                src='/images/MongoDB_Logo.png' 
-                                alt='mongodb' 
-                                />
+                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                            <img
+                                src='/images/MongoDB_Logo.png'
+                                alt='mongodb'
+                            />
                         </div>
                     </div>
                 </div>
                 <div className="follow">
                     <h3>Follow Me</h3>
                     <div className="about-me-socials">
-                        <a href="https://github.com/NathanielGrandinette" 
-                            className="about-me-social-link" 
+                        <a href="https://github.com/NathanielGrandinette"
+                            className="about-me-social-link"
                             target="_blank"
-                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : ""}}
-                            >
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
+                        >
                             <i className="fab fa-github"><FaGithub size={30} /></i>
                         </a>
-                        <a href="https://linkedin.com/in/nathaniel-grandinette" 
-                            className="about-me-social-link" 
+                        <a href="https://linkedin.com/in/nathaniel-grandinette"
+                            className="about-me-social-link"
                             target="_blank"
-                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : ""}}
-                            >
+                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
+                        >
                             <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>
                         </a>
                     </div>

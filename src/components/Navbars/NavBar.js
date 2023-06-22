@@ -1,4 +1,4 @@
-import { Container, Nav } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { Spin as Hamburger } from 'hamburger-react'
@@ -9,6 +9,7 @@ const NavBar = ({ tone, setTone }) => {
     const [showLinks, setShowLinks] = useState(false)
     const [width, setWidth] = useState(window.innerWidth)
     window.addEventListener('resize', () => setWidth(window.innerWidth))
+
     return (
         <nav className="nav" style={{ height: showLinks ? '100%' : '75px' }}>
             {width < 990 ?
@@ -24,22 +25,22 @@ const NavBar = ({ tone, setTone }) => {
                                 {tone === 'light' ? <BsMoon /> : <BsSun />}
                             </div>
                         </div>
-                        <div >
+                        <div>
                             <Hamburger color={tone === 'light' ? 'black' : 'white'} onToggle={() => setTimeout(() => setShowLinks(!showLinks))} />
                         </div>
                     </div>
                     {showLinks ?
                         <div className='links-mobile'>
-                            <Link to='/' className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
+                            <Link to='/' onClick={() => setShowLinks(false)} className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
                                 Home
                             </Link>
-                            <Link to='/projects' className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
+                            <Link to='/projects' onClick={() => setShowLinks(false)} className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
                                 Projects
                             </Link>
-                            <Link to='/about' className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
+                            <Link to='/about' onClick={() => setShowLinks(false)} className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
                                 About Me
                             </Link>
-                            <Link to='/contact' className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
+                            <Link to='/contact 'onClick={() => setShowLinks(false)} className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
                                 Contact Me
                             </Link>
                         </div>
