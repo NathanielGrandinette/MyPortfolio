@@ -4,6 +4,10 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 
 const About = ({ tone }) => {
+    const style = {
+        backgroundColor: tone === 'light' ? 'bisque' : 'white',
+        color: tone === 'dark' ? '#9CA3AF' : ""
+    }
     return (
         <div className="about-me-section">
             <div className="about-me-container">
@@ -33,37 +37,37 @@ const About = ({ tone }) => {
                 <div className='skills-container'>
                     <h2>Some of the technologies I have experience with</h2>
                     <div className='skills'>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                        <div style={style}>
                             <img
                                 src='/images/React-icon.svg.png'
                                 alt='react'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                        <div style={style}>
                             <img
                                 src='/images/HTML5-logo.png'
                                 alt='html'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                        <div style={style}>
                             <img
                                 src='/images/CSS-logo.png'
                                 alt='css'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                        <div style={style}>
                             <img
                                 src='/images/JS-logo.png'
                                 alt='javascript'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                        <div style={style}>
                             <img
                                 src='/images/express-logo.png'
                                 alt='express'
                             />
                         </div>
-                        <div style={{ backgroundColor: tone === 'light' ? 'bisque' : 'white', color: tone === 'dark' ? '#9CA3AF' : "" }}>
+                        <div style={style}>
                             <img
                                 src='/images/MongoDB_Logo.png'
                                 alt='mongodb'

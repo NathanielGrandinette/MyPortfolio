@@ -1,7 +1,7 @@
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { Spin as Hamburger } from 'hamburger-react'
+import { Divide as Hamburger } from 'hamburger-react'
 import { BsSun, BsMoon } from 'react-icons/bs'
 import './NavBar.css'
 
@@ -26,7 +26,10 @@ const NavBar = ({ tone, setTone }) => {
                             </div>
                         </div>
                         <div>
-                            <Hamburger color={tone === 'light' ? 'black' : 'white'} onToggle={() => setTimeout(() => setShowLinks(!showLinks))} />
+                            <Hamburger 
+                                toggled={showLinks}
+                                toggle={() => setTimeout(() => setShowLinks(!showLinks))}
+                                color={tone === 'light' ? 'black' : 'white'} />
                         </div>
                     </div>
                     {showLinks ?
@@ -40,7 +43,7 @@ const NavBar = ({ tone, setTone }) => {
                             <Link to='/about' onClick={() => setShowLinks(false)} className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
                                 About Me
                             </Link>
-                            <Link to='/contact 'onClick={() => setShowLinks(false)} className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
+                            <Link to='/contact' onClick={() => setShowLinks(false)} className='navLink2' style={{ color: tone === 'light' ? 'black' : 'white' }}>
                                 Contact Me
                             </Link>
                         </div>
