@@ -11,13 +11,13 @@ const About = ({ tone }) => {
     return (
         <div className="about-me-section">
             <div className="about-me-container">
-                <h1 className="about-me-header">ABOUT <span className="about-me-header-name">ME</span></h1>
+                <h1 data-testid="about-header" className="about-me-header">ABOUT <span className="about-me-header-name">ME</span></h1>
                 <div className="about-me-content">
                     <div className="about-me-img-container">
                         <img src='/images/profile-photo.jpg' alt="profile picture" className="about-me-img" />
                     </div>
                     <div className="about-me-text-container">
-                        <p className="about-me-text">
+                        <p data-testid="about-me-paragraph" className="about-me-text">
                             Welcome to my portfolio! As a highly skilled full stack web developer with expertise in the MERN stack
                             (MongoDB, Express.js, React.js, and Node.js), I bring a dynamic blend of technical proficiency and
                             creativity to the table. I am passionate about building user-friendly web applications that not only
@@ -40,36 +40,42 @@ const About = ({ tone }) => {
                         <div style={style}>
                             <img
                                 src='/images/React-icon.svg.png'
+                                data-testid="tech-imgs"
                                 alt='react'
                             />
                         </div>
                         <div style={style}>
                             <img
                                 src='/images/HTML5-logo.png'
+                                data-testid="tech-imgs"
                                 alt='html'
                             />
                         </div>
                         <div style={style}>
                             <img
                                 src='/images/CSS-logo.png'
+                                data-testid="tech-imgs"
                                 alt='css'
                             />
                         </div>
                         <div style={style}>
                             <img
                                 src='/images/JS-logo.png'
+                                data-testid="tech-imgs"
                                 alt='javascript'
                             />
                         </div>
                         <div style={style}>
                             <img
                                 src='/images/express-logo.png'
+                                data-testid="tech-imgs"
                                 alt='express'
                             />
                         </div>
                         <div style={style}>
                             <img
                                 src='/images/MongoDB_Logo.png'
+                                data-testid="tech-imgs"
                                 alt='mongodb'
                             />
                         </div>
@@ -81,6 +87,7 @@ const About = ({ tone }) => {
                         <a href="https://github.com/NathanielGrandinette"
                             className="about-me-social-link"
                             target="_blank"
+                            data-testid="github"
                             style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
                         >
                             <i className="fab fa-github"><FaGithub size={30} /></i>
@@ -88,6 +95,7 @@ const About = ({ tone }) => {
                         <a href="https://linkedin.com/in/nathaniel-grandinette"
                             className="about-me-social-link"
                             target="_blank"
+                            data-testid="linkedin"
                             style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
                         >
                             <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>

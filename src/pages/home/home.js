@@ -18,7 +18,7 @@ const Home = ({ tone }) => {
             <div className='home-container'>
                 <div className="home-headshot">
                     <div className='home-intro-sentence'>
-                        <h2 className='home-intro'>
+                        <h2 data-testid="intro-sentence" className='home-intro'>
                             Hi,<span className='wave'>&#128075;</span>I'm <span style={{ color: '#3498db' }}>Nathan</span>. <br />
                         </h2>
                         <div className='home-intro-job'>
@@ -27,6 +27,7 @@ const Home = ({ tone }) => {
                                 href="./images/nathaniel's-resume.pdf"
                                 download="nathaniel's-resume.pdf"
                                 target="_blank"
+                                data-testid="download-resume"
                                 rel="noreferrer"
                                 className="home-button-resume"
                                 aria-label='Download Resume'
@@ -66,6 +67,7 @@ const Home = ({ tone }) => {
                         className="homepage-social-link"
                         target="_blank"
                         aria-label='GitHub'
+                        data-testid="github"
                         style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? "#9CA3AF" : 'black' }}
                     >
                         <i className="fab fa-github"><FaGithub size={30} /></i>
@@ -74,6 +76,7 @@ const Home = ({ tone }) => {
                         className="homepage-social-link"
                         target="_blank"
                         aria-label='LinkedIn'
+                        data-testid="linkedin"
                         style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
                     >
                         <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>

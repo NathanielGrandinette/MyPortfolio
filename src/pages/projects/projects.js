@@ -24,10 +24,10 @@ const Projects = () => {
                                 <h2>{event.name}</h2>
                                 <div className="timeline-event-date">{event.date}</div>
                                 <p className='project-description' style={{ textAlign: 'justify', textJustify: 'inter-word' }}>{event.description}</p>
-                                <p className='project-skills'>{event.skillsUsed.map((skill) => (
-                                    <p style={{ margin: '10px' }}>{skill} </p>
+                                <div className='project-skills'>{event.skillsUsed.map((skill, index) => (
+                                    <div key={index} style={{ margin: '10px' }}>{skill} </div>
                                 ))}
-                                </p>
+                                </div>
                                 <div className='project-links'>
                                     {event.github ? <a href={event.github} target="_blank">Github</a> : ''}
                                     {event.live ? <a href={event.live} target="_blank">Live</a> : ''}

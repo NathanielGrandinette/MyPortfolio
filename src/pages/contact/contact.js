@@ -27,16 +27,16 @@ const Contact = ({ tone }) => {
                 <h2>Contact Details</h2>
                 <div className="contact-details-div">
                     <TiLocationOutline />
-                    <span className="contact-span">Mesa, AZ</span>
+                    <span data-testid="location" className="contact-span">Mesa, AZ</span>
                 </div>
 
                 <div className="contact-details-div">
                     <MdOutlineEmail />
-                    <span className="contact-span">nathaniel.grandinette@gmail.com</span>
+                    <span data-testid="email" className="contact-span">nathaniel.grandinette@gmail.com</span>
                 </div>
                 <div className="contact-details-div">
                     <FiPhone />
-                    <span className="contact-span">(480) 270-0854</span>
+                    <span data-testid="phone" className="contact-span">(480) 270-0854</span>
                 </div>
             </div>
             <ContactForm tone={tone} toast={toast} />
