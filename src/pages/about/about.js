@@ -18,19 +18,19 @@ const About = ({ tone }) => {
                     </div>
                     <div className="about-me-text-container">
                         <p data-testid="about-me-paragraph" className="about-me-text">
-                            Welcome to my portfolio! As a highly skilled full stack web developer with expertise in the MERN stack
-                            (MongoDB, Express.js, React.js, and Node.js), I bring a dynamic blend of technical proficiency and
+                            Welcome to my portfolio! As a full stack software developer with expertise in the MERN stack
+                            (MongoDB, Express.js, React.js, and Node.js), I bring a blend of technical proficiency and
                             creativity to the table. I am passionate about building user-friendly web applications that not only
                             meet clients' needs but also exceed expectations.
 
                             Beyond my technical prowess, I am a passionate learner who stays up-to-date with the latest trends and
                             technologies in the web development landscape. I am always seeking new challenges, and I thrive in fast-paced,
-                            collaborative environments where innovation and creativity are valued.
+                            environments where innovation and creativity are valued.
                         </p>
                         <p className='about-me-text'>
-                            If you're looking for a talented and versatile full stack web developer who can bring your vision to life
-                            and create exceptional digital experiences, then I'm your perfect fit. Let's connect and embark on an exciting
-                            journey together to revolutionize the digital world.
+                            If you're looking for a full stack software developer who can bring your vision to life, 
+                            then I'm your perfect fit. Let's connect and embark on an exciting
+                            journey together.
                         </p>
                     </div>
                 </div>

@@ -25,7 +25,7 @@ const Projects = () => {
                                 <div className="timeline-event-date">{event.date}</div>
                                 <p className='project-description' style={{ textAlign: 'justify', textJustify: 'inter-word' }}>{event.description}</p>
                                 <div className='project-skills'>{event.skillsUsed.map((skill, index) => (
-                                    <div key={index} style={{ margin: '10px' }}>{skill} </div>
+                                    <div key={index} className="skill" style={{ margin: '10px' }}>{skill} </div>
                                 ))}
                                 </div>
                                 <div className='project-links'>

@@ -31,6 +31,12 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.skill {
+  background-color: #407bff;
+  padding: 0 10px;
+  border-radius: 50px;
+}
+
 .project-details {
   min-height: 450px;
   max-width: 600px;
@@ -44,7 +50,7 @@
 .project-skills {
   font-family: monospace;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
