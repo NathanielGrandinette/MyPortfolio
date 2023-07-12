@@ -5,7 +5,8 @@ const events = [
         description: "The-N-T-Collection is an ecommerce application built with ReactJS. Key features include user Authentication using JSON web tokens and bcrypt, admin roles allowing the ability to add, edit, delete and feature products, as well as grant or remove admin access to users. Users can browse products, view details, and add items to the cart. ",
         skillsUsed: ["React", "Express", "Axios", "Node", "MongoDB", "JWT", "Jest"],
         date: "June 2023",
-        github: 'https://github.com/NathanielGrandinette/The-N-T-Collection'
+        github: 'https://github.com/NathanielGrandinette/The-N-T-Collection',
+        live: 'https://the-n-t-collection.vercel.app/'
     },
     {
         name: "Productivity App",
