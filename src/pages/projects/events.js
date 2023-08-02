@@ -24,14 +24,7 @@ const events = [
         skillsUsed: ["HTML", "CSS", "JavaScript"],
         date: "October 2022",
         github: 'https://github.com/KenzieAcademy-Students/teamwork-assessment-connect-four-NathanielGrandinette',
-    },
-    {
-        name: "ChatBot",
-        image: 'chatbot.jpg',
-        description: "This project builds a conversational interface using React and an OpenAI API call using Axios as well as Node.js and Express for the backend, where users can input text and receive instant responses.",
-        skillsUsed: ["React", "Express", "Axios", "OpenAI", "Node"],
-        date: "January 2023"
-    },
+    }
 ]
 
 export default events
