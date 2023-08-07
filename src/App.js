@@ -11,6 +11,14 @@ import { useState } from 'react';
 
 function App() {
   const [tone, setTone] = useState('dark')
+
+  window.addEventListener("blur", () => {
+    document.title = "Come Back..."
+  })
+
+  window.addEventListener("focus", () => {
+    document.title = "Nathaniel's Portfolio"
+  })
   
   return (
     <div className="App"
