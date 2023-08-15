@@ -5,15 +5,16 @@ import Home from './pages/home/home'
 import Projects from './pages/projects/projects'
 import Contact from './pages/contact/contact'
 import About from './pages/about/about'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
 function App() {
   const [tone, setTone] = useState('dark')
+  const [windows, setWindows] = useState(window.location.pathname.replace(/\//g,''))
 
   window.addEventListener("blur", () => {
-    document.title = "Come Back..."
+    document.title = "Come back... Nathaniel's Portfolio"
   })
 
   window.addEventListener("focus", () => {
