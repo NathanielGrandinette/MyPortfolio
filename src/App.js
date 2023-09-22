@@ -5,13 +5,18 @@ import Home from './pages/home/home'
 import Projects from './pages/projects/projects'
 import Contact from './pages/contact/contact'
 import About from './pages/about/about'
-import { useState, useEffect } from 'react';
+import ReactGA from 'react-ga'
+import { useState } from 'react';
 
 
 
 function App() {
   const [tone, setTone] = useState('dark')
   const [windows, setWindows] = useState(window.location.pathname.replace(/\//g,''))
+
+  ReactGA.initialize("G-1951T02CJ7")
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
 
   window.addEventListener("blur", () => {
     document.title = "Come back... Nathaniel's Portfolio"
