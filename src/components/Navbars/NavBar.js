@@ -51,10 +51,15 @@ const NavBar = ({ tone, setTone }) => {
                 </div> :
                 <div className='navbar1'>
                     <Container className='links'>
-                        <Link to='/' className='navLink' style={{ color: tone === 'light' ? 'black' : 'white' }}>
-                            Home
+                        <Link to='/' className='nav-name' >
+                            <div className='nav-nathan' style={{ color: tone === 'light' ? 'black' : 'white' }}>
+                                Nathaniel Grandinette
+                            </div>
+                            <div className='nav-title'>
+                                Software Developer
+                            </div>
                         </Link>
-                        <Link to='/projects' className='navLink' style={{ color: tone === 'light' ? 'black' : 'white' }}>
+                        <Link to='/projects' className='navLink' style={{ color: tone === 'light' ? 'black' : 'white'}}>
                             Projects
                         </Link>
                         <Link to='/about' className='navLink' style={{ color: tone === 'light' ? 'black' : 'white' }}>
@@ -63,7 +68,8 @@ const NavBar = ({ tone, setTone }) => {
                         <Link to='/contact' className='navLink' style={{ color: tone === 'light' ? 'black' : 'white' }}>
                             Contact Me
                         </Link>
-                        <div className='toneToggle'>
+                    </Container>
+                    <div className='toneToggle'>
                             <div
                                 className='tone'
                                 style={{ backgroundColor: tone === 'light' ? '#f5f5f5' : '#102D44' }}
@@ -73,7 +79,6 @@ const NavBar = ({ tone, setTone }) => {
                                 {tone === 'light' ? <BsMoon /> : <BsSun />}
                             </div>
                         </div>
-                    </Container>
                 </div>}
 
         </nav>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .dropdown-toggle:after {
     display: none !important;
 }
@@ -5,14 +7,16 @@
 .nav {
     display: flex;
     flex-direction: column;
-    width: 100;
+    width: 100%;
     z-index: 99999;
 }
 
 .navbar1 {
-    max-width: none !important;
     height: 100%;
-    padding: none !important;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navbar2 {
@@ -55,6 +59,22 @@
     align-items: center;
     text-decoration: none;
     height: 100%;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.navLink {
+    color: #8b8b8b;
+}
+
+.nav-nathan {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-title {
+    color: #8b8b8b;
 }
 
 .navLink:hover {
@@ -64,11 +84,18 @@
 
 .links {
     display: flex;
-    justify-content: space-around;
-    margin-left: 5px;
-    margin-right: 5px;
+    gap: 50px;
+    justify-content: flex-start;
+    margin-left: none !important;
     height: 100%;
     animation: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.nav-name {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
 }
 
 .links-mobile {
