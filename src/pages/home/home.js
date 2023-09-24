@@ -44,7 +44,7 @@ const Home = ({ tone }) => {
             </div>
             <Container className='home-container'>
                 <div className='seperator-div'>
-                    <span className='next-steps-span'></span><h2 className='next-steps-h2'>Projects</h2><span className='next-steps-span'></span>
+                    <span className='next-steps-span' style={{ backgroundColor: tone === 'light' ? "black" : "white" }}></span><h2 className='next-steps-h2'>Projects</h2><span className='next-steps-span' style={{ backgroundColor: tone === 'light' ? "black" : "white" }}></span>
                 </div>
                 <Projects />
                 <Link to='/projects' className='home-buttons'>
@@ -53,12 +53,12 @@ const Home = ({ tone }) => {
             </Container>
 
             <Container
-                style={{ color: 'white', marginTop: '50px', height: '150' }}
+                style={{ marginTop: '50px', height: '150' }}
                 className="follow-me"
                 data-aos="zoom-in"
                 data-aos-duration='1000'>
                 <div className='seperator-div'>
-                    <span className='next-steps-span'></span><h2 className='next-steps-h2'>Follow Me</h2><span className='next-steps-span'></span>
+                    <span className='next-steps-span' style={{ backgroundColor: tone === 'light' ? "black" : "white" }}></span><h2 className='next-steps-h2'>Follow Me</h2><span className='next-steps-span' style={{ backgroundColor: tone === 'light' ? "black" : "white" }}></span>
                 </div>
                 <div
                     className="home-social-links"

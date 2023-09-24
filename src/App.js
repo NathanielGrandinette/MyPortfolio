@@ -26,7 +26,7 @@ function App() {
       <div
         className="App"
         style={{
-          backgroundColor: tone === "light" ? "white" : "#091927",
+          backgroundColor: tone === "light" ? "#f5fbff" : "#091927",
           color: tone === "light" ? "black" : "white",
         }}
       >
