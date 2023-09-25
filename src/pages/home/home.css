@@ -112,6 +112,7 @@
 .home-buttons:hover {
     background-color: #686bf1;
     color: white;
+    transition: all .6s ease;
 }
 
 .home-button-resume {
@@ -128,6 +129,7 @@
 .home-button-resume:hover {
     background-color: #686bf1;
     color: white;
+    transition: all .6s ease;
 }
 
 .home-social-links {

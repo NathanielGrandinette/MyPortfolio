@@ -4,11 +4,16 @@ import events from './events';
 import 'aos/dist/aos.css'
 import './projects.css';
 
-const Projects = () => {
+const Projects = ({ tone }) => {
 
     useEffect(() => {
         AOS.init()
     }, [])
+
+    const style = {
+        border: tone === "light" ? "2px solid black" : "2px solid white", 
+        boxShadow: tone === "light" ? "4px 4px 0 0 black" : "4px 4px 0 0 white"
+    }
 
     return (
         <div className="timeline">
@@ -21,7 +26,7 @@ const Projects = () => {
                                 <img src={`/images/${event.image}`} alt={event.name} className='port-img' />
                             </div>
                             <div className='project-details'>
-                                <h2>{event.name}</h2>
+                                <h2 style={style}>{event.name}</h2>
                                 <div className="timeline-event-date">{event.date}</div>
                                 <p className='project-description' style={{ textAlign: 'justify', textJustify: 'inter-word' }}>{event.description}</p>
                                 <div className='project-skills'>{event.skillsUsed.map((skill, index) => (

@@ -46,7 +46,7 @@ const Home = ({ tone }) => {
                 <div className='seperator-div'>
                     <span className='next-steps-span' style={{ backgroundColor: tone === 'light' ? "black" : "white" }}></span><h2 className='next-steps-h2'>Projects</h2><span className='next-steps-span' style={{ backgroundColor: tone === 'light' ? "black" : "white" }}></span>
                 </div>
-                <Projects />
+                <Projects tone={tone}/>
                 <Link to='/projects' className='home-buttons'>
                     More Projects
                 </Link>

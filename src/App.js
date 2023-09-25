@@ -34,7 +34,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home tone={tone} />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects tone={tone}/>} />
           <Route path="/about" element={<About tone={tone} />} />
           <Route path="/contact" element={<Contact tone={tone} />} />
         </Routes>

@@ -59,6 +59,10 @@
   align-items: center;
 }
 
+.project-details h2 {
+  padding: 10px;
+}
+
 .project-skills {
   font-family: monospace;
   display: flex;
@@ -118,9 +122,9 @@
   .timeline-event:nth-child(odd) .timeline-event-image img:hover {
     transform: perspective(800px) rotateY(15deg) translateY(-50px) rotateX(10deg) scale(1);
   }
-  
+
   .timeline-event-image img {
-    width: 500px;
+    width: 600px;
     height: 400px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
