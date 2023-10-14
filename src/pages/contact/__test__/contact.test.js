@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import Contact from '../pages/contact/contact'
+import '@testing-library/jest-dom'
+import Contact from '../contact'
 import { BrowserRouter } from 'react-router-dom'
 
 const MockRouter = () => {

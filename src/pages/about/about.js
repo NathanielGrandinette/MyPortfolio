@@ -1,6 +1,6 @@
 import './about.css'
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import Socials from '../../components/Socials/Socials';
 
 
 const About = ({ tone }) => {
@@ -81,27 +81,7 @@ const About = ({ tone }) => {
                         </div>
                     </div>
                 </div>
-                <div className="follow">
-                    <h3>Follow Me</h3>
-                    <div className="about-me-socials">
-                        <a href="https://github.com/NathanielGrandinette"
-                            className="about-me-social-link"
-                            target="_blank"
-                            data-testid="github"
-                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
-                        >
-                            <i className="fab fa-github"><FaGithub size={30} /></i>
-                        </a>
-                        <a href="https://linkedin.com/in/nathaniel-grandinette"
-                            className="about-me-social-link"
-                            target="_blank"
-                            data-testid="linkedin"
-                            style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'dark' ? '#9CA3AF' : "" }}
-                        >
-                            <i className="fab fa-linkedin"><FaLinkedin size={30} /></i>
-                        </a>
-                    </div>
-                </div>
+                <Socials tone={tone}/>
             </div>
         </div>
 

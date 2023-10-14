@@ -13,7 +13,6 @@
 
 .contact-div {
   display: flex;
-  min-height: 90vh;
   justify-content: center;
   margin-top: 150px;
   flex-direction: row-reverse;

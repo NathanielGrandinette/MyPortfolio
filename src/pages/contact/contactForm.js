@@ -39,7 +39,7 @@ const ContactForm = ({ tone, toast }) => {
                         id="name" name="name"
                         placeholder="Your name"
                         required
-                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'light' ? "black" : "#FAF9F6" }}
                     />
                 </div>
                 <div className="form-group">
@@ -51,7 +51,7 @@ const ContactForm = ({ tone, toast }) => {
                         name="email"
                         placeholder="Your email"
                         required
-                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'light' ? "black" : "#FAF9F6" }}
                     />
                 </div>
                 <div className="form-group">
@@ -62,7 +62,7 @@ const ContactForm = ({ tone, toast }) => {
                         placeholder="Subject"
                         name="message"
                         required
-                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'light' ? "black" : "#FAF9F6" }}
                     />
                 </div>
                 <div className="form-group">
@@ -71,8 +71,9 @@ const ContactForm = ({ tone, toast }) => {
                         id="message"
                         className='form-style'
                         name="message"
+                        placeholder='Message'
                         required
-                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851' }}
+                        style={{ backgroundColor: tone === 'light' ? 'white' : '#1E3851', color: tone === 'light' ? "black" : "#FAF9F6" }}
                     />
                 </div>
                 <div className="form-group-btn">

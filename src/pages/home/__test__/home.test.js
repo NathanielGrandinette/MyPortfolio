@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import Home from '../pages/home/home'
+import '@testing-library/jest-dom'
+import Home from '../home'
 import { BrowserRouter } from 'react-router-dom'
 
 const MockRouter = () => {
@@ -26,7 +27,7 @@ describe("Home Page Intro", () => {
     })
 
     it("Should render download resume button", async () => {
-        const buttonElement = screen.getByTestId("download-resume")
+        const buttonElement = screen.getByText("Download Resume")
         expect(buttonElement).toBeInTheDocument()
     })
 
@@ -51,24 +52,3 @@ describe('Home page projects', () => {
         expect(moreProjectsBtn).toBeInTheDocument()
     })
 }) 
-
-describe("Home page follow me section", () => {
-    beforeEach(() => {
-        renderLanding()
-    })
-
-    it("Should render follow me header", () => {
-        const followHeader = screen.getByText("Follow Me")
-        expect(followHeader).toBeInTheDocument()
-    })
-
-    it("Should render github button", () => {
-        const githubButton = screen.getByTestId("github")
-        expect(githubButton).toHaveAttribute("href", "https://github.com/NathanielGrandinette")
-    })
-
-    it("Should render linkedIn button", () => {
-        const linkedinButton = screen.getByTestId("linkedin")
-        expect(linkedinButton).toHaveAttribute("href", "https://linkedin.com/in/nathaniel-grandinette")
-    })
-})

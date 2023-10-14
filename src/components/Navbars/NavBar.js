@@ -78,7 +78,7 @@ const NavBar = ({ tone, setTone }) => {
                             Contact Me
                         </Link>
                     </div>
-                    <div className='toneToggle'>
+                    <div className='toneToggle' data-testid="tone-toggle">
                             <div
                                 className='tone'
                                 style={{ backgroundColor: tone === 'light' ? '#f5f5f5' : '#102D44' }}

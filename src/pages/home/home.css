@@ -77,22 +77,6 @@
     font-weight: bolder;
 }
 
-.next-steps-span {
-    height: 1px;
-    min-width: 25%;
-}
-
-.next-steps-h2 {
-    width: 25%;
-}
-
-.seperator-div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .home-container {
     max-width: 100%;
     margin-top: 50px;
@@ -130,29 +114,6 @@
     background-color: #686bf1;
     color: white;
     transition: all .6s ease;
-}
-
-.home-social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 150px;
-}
-
-.homepage-social-link {
-    margin: 0 1rem;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 3px 3px 0 black;
-}
-
-.homepage-social-link:hover {
-    color: #2980b9;
-}
-
-.follow-me {
-    margin: 0 auto;
-    width: 75%;
 }
 
 @media screen and (max-width: 775px) {
