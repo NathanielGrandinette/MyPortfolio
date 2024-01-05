@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 0 50px;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500s linear;
   transition: background-color 500ms linear;

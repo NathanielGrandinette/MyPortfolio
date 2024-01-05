@@ -6,6 +6,7 @@ import Projects from "./pages/projects/projects";
 import Contact from "./pages/contact/contact";
 import About from "./pages/about/about";
 import { useState } from "react";
+import ProjectDetails from "./pages/projects/ProjectDetails";
 
 function App() {
   const [tone, setTone] = useState("dark");
@@ -34,7 +35,10 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home tone={tone} />} />
-          <Route path="/projects" element={<Projects tone={tone}/>} />
+          <Route path="/projects">
+            <Route index element={<Projects tone={tone} />} />
+            <Route path=":name" element={<ProjectDetails />} />
+          </Route>
           <Route path="/about" element={<About tone={tone} />} />
           <Route path="/contact" element={<Contact tone={tone} />} />
         </Routes>
