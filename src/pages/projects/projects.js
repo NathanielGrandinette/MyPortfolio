@@ -36,13 +36,13 @@ const Projects = ({ tone }) => {
           <div className="timeline-events">
             <div className="timeline-event-content">
               <div className="timeline-event-image">
-                {/* <Link to={`/projects/${event.name}`}> */}
+                <Link to={`/projects/${event.name}`}>
                   <img
-                    src={`/images/${event.image}`}
+                    src={`/images/${event.name}/${event.images[0]}`}
                     alt={event.name}
                     className="port-img"
                   />
-                {/* </Link> */}
+                </Link>
               </div>
               <div className="project-details">
                 <h2 style={style}>{event.name}</h2>

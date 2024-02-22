@@ -37,7 +37,7 @@ function App() {
           <Route path="/" element={<Home tone={tone} />} />
           <Route path="/projects">
             <Route index element={<Projects tone={tone} />} />
-            <Route path=":name" element={<ProjectDetails />} />
+            <Route path=":name" element={<ProjectDetails tone={tone}/>} />
           </Route>
           <Route path="/about" element={<About tone={tone} />} />
           <Route path="/contact" element={<Contact tone={tone} />} />

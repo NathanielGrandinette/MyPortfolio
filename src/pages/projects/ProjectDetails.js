@@ -4,10 +4,9 @@ import events from "./events";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { FiTag } from "react-icons/fi";
 
-const ProjectDetails = () => {
+const ProjectDetails = ({ tone }) => {
   const { name } = useParams();
   const project = events.find((event) => event.name === name);
-  console.log(project);
 
   return (
     <div className="project-details-page">
@@ -23,9 +22,14 @@ const ProjectDetails = () => {
         </div>
       </div>
       <div className="img-container">
-        <img src={`/images/${project.image}`} />
-        <img src={`/images/${project.image}`} />
-        <img src={`/images/${project.image}`} />
+        {project.images.map((image) => {
+          return (
+            <img src={`/images/${project.name}/${image}`} />
+          )
+        })}
+        {/* <img src={`/images/${project.name}/${project.images[0]}`} />
+        <img src={`/images/${project.name}/${project.images[1]}`} />
+        <img src={`/images/${project.name}/${project.images[2]}`} /> */}
       </div>
       <div>
         <div className="info">
@@ -38,7 +42,7 @@ const ProjectDetails = () => {
                 {project.live ? 
                 <div>
                   Website:  
-                  <Link to={project.live}> {project.live}</Link>
+                  <Link to={project.live}> {project.name}</Link>
                 </div> : ""}
                 <div>
                   Github: 

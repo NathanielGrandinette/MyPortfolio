@@ -1,11 +1,13 @@
 .project-details-page {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-family: "GeneralSans-Regular";
   max-width: 1750px;
+  margin-top: 100px;
 }
 
 .project-title {
@@ -28,15 +30,9 @@
   gap: 10px;
 }
 
-.date {
-}
-
-.type {
-}
-
 .img-container {
   display: flex;
-  max-width: 1500px;
+  max-width: 1250px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -46,12 +42,13 @@
 }
 
 .img-container img {
-  min-width: 250px;
-  width: 30%;
+  width: 300px;
+  height: 300px;
   border-radius: 15px;
 }
 
 .info {
+  max-width: 1250px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -86,15 +83,12 @@
 
 .about-client a {
    text-decoration: none;
-   color: white;
+   color: #3498db;
 }
 
 .about-client a:hover {
     text-decoration: underline;
     color: rgb(150, 121, 236);
-}
-
-.objective {
 }
 
 .objective h4 {
@@ -105,10 +99,6 @@
 .objective p {
   font-size: 1rem;
 }
-
-.tools {
-}
-
 .tools h4 {
   font-weight: 600;
   font-size: 1.75rem;
